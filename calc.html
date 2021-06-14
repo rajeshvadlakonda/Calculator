@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link type="text/css" rel='stylesheet' href='../html/bootstrap-4.6.0-dist/css/bootstrap.min.css'>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <div class="container justify-content-center" style="padding: 10px;
+        justify-content: center;position: absolute;left: 50%;top:25%;
+        transform: (translate(-100,-50));">
+            <table  style="height: 300px;width:200px" 
+            class="table  table-responsive-lg table-dark">
+                <tr class="col-3 btn-primary">
+                    <td><button value="1" id="block1" onclick="display('1')">1</button></td>
+                    <td><button value="2" id="block2" onclick="display('2')">2</button></td>
+                    <td><button value="3" id="block3" onclick="display('3')">3</button></td>
+                    <td><button value="/" id="divide" onclick="display('/')">/</button></td>
+                </tr>
+                <tr class="col-3 btn-primary">
+                    <td><button value="4" id="block4" onclick="display('4')">4</button></td>
+                    <td><button value="5" id="block5" onclick="display('5')">5</button></td>
+                    <td><button value="6" id="block6" onclick="display('6')">6</button></td>
+                    <td><button value="*" id="multipy" onclick="display('*')">*</button></td>
+                </tr>
+                <tr class="col-3 btn-primary">
+                    <td><button value="7"id="block7" onclick="display('7')">7</button></td>
+                    <td><button value="8"id="block8" onclick="display('8')">8</button></td>
+                    <td><button value="9"id="block9" onclick="display('9')">9</button></td>
+                    <td><button value="+"id="plus" onclick="display('+')">+</button></td>
+                </tr>
+                <tr class="col-3 btn-primary">
+                    <td><button value="0"id="block0" onclick="display('0')">0</button></td>
+                    <td><button id="dot" onclick="display('.')"><strong>.</strong></button></td>
+                    <td><button id="ans" onclick="calculate()">=</button></td>
+                    <td><button value="-"id="minus" onclick="display('-')">-</button></td>
+                </tr>
+                <tr >
+                    <td colspan="3"><input id="input" type="text" ></input></td>
+                    <td><button id="clr" onclick="clr()">C</button></td>
+                </tr>
+            </table>
+        </div>
+    <script src='./calc.js'></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    </body>
+</html>
